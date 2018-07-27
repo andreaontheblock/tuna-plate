@@ -1,4 +1,16 @@
 /* ---- reset ---- */
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+/*PALETTE COLOR DEFINITION
+
+GREEN 1: #C3E043
+GREEN 2: #CEE081
+BROWN: #EEC991
+WHITE: FFFFFF
+GRANITE GREY: #6C6061
+BLACK: #21260b
+
+*/
 
 html {
   box-sizing: border-box;
@@ -7,26 +19,27 @@ html {
   box-sizing: inherit;
 }
 
+
+/* ---- typography ---- */
+
 body {
   margin: 0;
   padding: 0;
+
+  font-family: 'Lato', sans-serif;
+  color: #323232;
 }
 
-
-/* ---- typography ---- */
 
 
 /* ---- layout ---- */
 
-
 .container {
-  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.section {
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
+
 
 @media (min-width: 768px) {
   .container {
@@ -40,6 +53,173 @@ body {
 /* ---- footer ---- */
 
 /* ---- components ---- */
+
+header{
+  display: flex;
+  flex-direction: column;
+  
+  height: 520px;
+  background-image: url('assets/header.png');
+  text-align: right;
+}
+
+#catch-phrase1{
+  margin:  85% 5% 0 0;
+  color: white;
+  font-weight: 300;
+  text-shadow: 2px 2px 20px #000000;
+}
+
+#catch-phrase2{
+  margin: 1% 5% 0 0;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 2px 2px 20px #000000;
+
+}
+
+#button-up{
+  display: flex;
+  align-content: center;
+  margin: auto;
+  margin-top: 8%;
+}
+
+button{
+  background-color: #658b05;
+  height: 60px;
+  width: 200px;
+  font-size: 1.1em;
+  border-radius: 10px;
+  border: none;
+  font-weight: 400;
+  color: white;
+  box-shadow: 2px 2px 30px #000000;
+  letter-spacing: 1.5px;
+}
+
+p{
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 300;
+
+}
+
+.happiness-text{
+  font-style: italic;
+  margin: 8% 0;
+  padding-top: 5%;
+}
+
+.benefits{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+.card{
+  flex: 1 0 50%;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  height: 187.5px;
+  padding: 15% 0;
+  font-weight: bolder;
+  text-shadow: 1px 1px 30px #000000;
+  color: white;
+  font-size: 1.1em;
+
+}
+
+#card-1{
+  background-image: url('assets/energy.jpg');
+}
+
+#card-2{
+  background-image: url('assets/meditationnn.jpg');
+}
+
+#card-3{
+  background-image: url('assets/aging.jpg');
+}
+
+#card-4{
+  background-image: url('assets/food.jpg');
+}
+
+
+.cool-text{
+  padding: 0 10%;
+  margin: 10% 0;
+}
+
+
+.tea-compare{
+  height: 200px;
+  background-image: url('assets/matcha-green.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 375px auto;
+
+}
+
+.button-article{
+  display: flex;
+  flex-direction: column;
+}
+
+#japanese-article{
+  margin: 10% 0;
+  padding: 0 10%;
+  font-size: 1.1em;
+}
+
+#japanese-img{
+  background-image: url('assets/japanese-art.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 375px auto;
+
+}
+
+.bottom{
+  background-image: url('assets/bottom.png');
+  height: 200px;
+  display: flex;
+  align-content: center;
+
+}
+
+#button-down{
+  display: flex;
+  align-content: center;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---- css shame ---- */
 
